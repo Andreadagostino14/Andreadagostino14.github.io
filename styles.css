@@ -1,0 +1,206 @@
+ /*palette
+  bianco: #FFFFFF
+  nero: #000000
+  arancio: #FB6107 */
+
+body {
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  scroll-behavior: smooth;
+  width: 90%;
+  margin: auto;
+}
+figure {
+    border-radius: 7%;
+    flex-flow: row;
+    padding: 5px;
+    max-width: 300px;
+}
+figcaption {
+      background-color: #FB6107;
+      color: #ffff;
+    }
+h1 {
+  text-align: left;
+  font-family: 'Spectral SC', serif;
+}
+h2 {
+  text-align: left;
+  color: black;
+  font-family: 'Spectral SC', serif;
+  display: block;
+}
+h3 {
+  text-align: center;
+}
+img {
+  background-color: transparent;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+}
+
+#menu li {
+display:inline;
+font-family: 'Spectral SC', serif;
+color:black;
+padding:10px 30px;
+border-right: solid 3px #FB6107;
+text-decoration: none;
+}
+#menu a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: #FB6107;
+}
+
+.button {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#andrea {
+  border-radius: 70%;
+  width: 20%;
+  float: left;
+  padding: 2px;
+  background-color: black;
+  margin: 10px;
+}
+
+ p {
+      border-radius: 7%;
+    }
+
+footer {
+  background-color:#FEEA00;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+marquee {
+  font-weight: bold;
+  height: 50px;
+  width: 25%;
+  background-color: white;
+  color: #FB6107;
+  margin: 30px;
+  font-size: 15;
+}
+
+.triadic {
+  padding: 20px #FB6107;
+  margin: 4%;
+  width: 30%;
+  border: 8px #FB6107 solid;
+}
+.triadic-edu {
+  padding: 20px #FB6107;
+  margin: auto;
+  width: 20%;
+}
+.duo {
+  border: 5px solid;
+  border-color: black;
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  height: auto;
+}
+
+#intro {
+  width: 60%;
+  margin-bottom: 80px;
+}
+#education {
+  border: thin ridge black;
+  margin-bottom: 50px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+.no-mobile {
+  display: none;
+}
+
+.container-menu {
+  background-color: #FB6107;
+  border-radius: 2%;
+}
+
+#menu li {
+font-size: 10px;
+padding:1px 2px;
+border-right: solid 2px #FB6107;
+}
+
+#intro {
+  width: 100%;
+}
+
+#andrea {
+  width: 35%;
+}
+  article {
+    flex-direction: column ;
+  }
+  .triadic {
+    width: 70%;
+    margin:auto;
+    margin-top: 10px;
+  }
+  .triadic-edu {
+    width: 90%;
+    margin:10px;
+  }
+
+  marquee {
+    width: 80%;
+  }
+
+  #collaborations {
+    flex-direction: row;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .no-mobile {
+    display: none;
+  }
+  #intro {
+    width: 100%;
+  }
+  .button {
+      font-size: 15px;
+  }
+  .duo {
+    width: 30%;
+    border: none;
+  }
+}
